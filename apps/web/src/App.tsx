@@ -14,15 +14,11 @@ import ProfilePage from "./pages/ProfilePage";
 import NotFound from "./pages/NotFound";
 
 
-import TestChecklistPage from "./pages/TestChecklistPage";
-import ShipPage from "./pages/ShipPage";
-import ProofPage from "./pages/ProofPage";
 import RBStepPage from "./pages/rb/RBStepPage";
-import RBProofPage from "./pages/rb/RBProofPage";
 import ResumeHome from "./pages/resume/ResumeHome";
 import ResumeBuilder from "./pages/resume/ResumeBuilder";
 import ResumePreview from "./pages/resume/ResumePreview";
-import ResumeProof from "./pages/resume/ResumeProof";
+
 import Navigation from "./components/Navigation";
 import Readiness from "./modules/readiness/App";
 import JobsApp from "./modules/jobs/JobsApp";
@@ -40,7 +36,7 @@ const App = () => (
           <Route path="/" element={<ResumeHome />} />
           <Route path="/builder" element={<ResumeBuilder />} />
           <Route path="/preview" element={<ResumePreview />} />
-          <Route path="/proof" element={<RBProofPage />} />
+
 
           {/* Legacy Dashboard Routes */}
           <Route path="/dashboard" element={<DashboardLayout />}>
@@ -57,10 +53,7 @@ const App = () => (
           {/* Job Hunter Module Routes */}
           <Route path="/jobs/*" element={<JobsApp />} />
 
-          {/* New PRP Routes */}
-          <Route path="/prp/07-test" element={<TestChecklistPage />} />
-          <Route path="/prp/08-ship" element={<ShipPage />} />
-          <Route path="/prp/proof" element={<ProofPage />} />
+
 
           {/* AI Resume Builder Routes */}
           <Route path="/rb/01-problem" element={<RBStepPage />} />
@@ -71,7 +64,7 @@ const App = () => (
           <Route path="/rb/06-build" element={<RBStepPage />} />
           <Route path="/rb/07-test" element={<RBStepPage />} />
           <Route path="/rb/08-ship" element={<RBStepPage />} />
-          <Route path="/rb/proof" element={<RBProofPage />} />
+
 
           <Route path="*" element={<NotFound />} />
         </Routes>

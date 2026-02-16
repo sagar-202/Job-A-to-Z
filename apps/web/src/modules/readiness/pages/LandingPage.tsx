@@ -23,7 +23,7 @@ const features = [
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-[calc(100vh-4rem)] flex flex-col bg-background">
       {/* Hero */}
       <section className="flex flex-col items-center justify-center px-6 py-24 text-center">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">

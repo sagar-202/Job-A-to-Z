@@ -18,7 +18,7 @@ const DashboardLayout = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-[calc(100vh-4rem)]">
       {/* Sidebar */}
       <aside className="w-60 flex flex-col border-r bg-sidebar text-sidebar-foreground">
         <div className="px-5 py-5 text-lg font-bold text-sidebar-primary-foreground">
